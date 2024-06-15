@@ -1,0 +1,826 @@
+{
+    "intents": [
+      {
+        "tag": "saludo",
+        "patterns": [
+          "Hola",
+          "Hola, ¿hay alguien ahí?",
+          "Hola, ¿cómo estás?",
+          "Buen día"
+        ],
+        "responses": [
+          "¡Hola! ¿Cómo te sientes hoy?",
+          "Hola, ¿qué te trae por aquí hoy?",
+          "Hola, ¿cómo te sientes en este momento?"
+        ]
+      },
+      {
+        "tag": "ansiedad",
+        "patterns": [
+          "Me siento ansioso/a",
+          "¿Cómo puedo manejar la ansiedad?"
+        ],
+        "responses": [
+          "Es común sentir ansiedad. Vamos a explorar algunas técnicas para calmarte juntos.",
+          "Tomar respiraciones profundas puede ayudar. ¿Te gustaría probar un ejercicio de relajación?"
+        ]
+      },
+      {
+        "tag": "depresion",
+        "patterns": [
+          "Me siento triste todo el tiempo",
+          "¿Qué puedo hacer sobre mi estado de ánimo bajo?"
+        ],
+        "responses": [
+          "Estoy aquí para escucharte. Hablemos sobre lo que te preocupa.",
+          "Dar pequeños pasos cada día puede marcar la diferencia. ¿Qué es algo que normalmente te trae alegría?"
+        ]
+      },
+      {
+        "tag": "autolesion",
+        "patterns": [
+          "He estado pensando en la autolesión",
+          "¿Cómo puedo manejar estos sentimientos?"
+        ],
+        "responses": [
+          "Es importante buscar apoyo. ¿Has hablado con alguien en quien confíes sobre cómo te sientes?",
+          "Busquemos juntos formas saludables de manejar estas emociones. ¿Te gustaría probar un ejercicio de enfoque?"
+        ]
+      },
+      {
+        "tag": "suicidio",
+        "patterns": [
+          "Siento ganas de darme por vencido/a",
+          "¿Qué debo hacer si tengo pensamientos suicidas?"
+        ],
+        "responses": [
+          "Tus sentimientos son válidos. Es crucial buscar ayuda inmediata. ¿Puedo ayudarte a encontrar recursos o contactar una línea de ayuda?",
+          "Hablar con un profesional puede proporcionar apoyo y orientación. ¿Te gustaría que te ayudara a encontrar un consejero?"
+        ]
+      },
+      {
+        "tag": "apoyo-general",
+        "patterns": [
+          "Me siento abrumado/a",
+          "¿Cómo puedo mejorar mi bienestar mental?"
+        ],
+        "responses": [
+          "Tomarse descansos y practicar el autocuidado puede ayudar. ¿Qué es algo que disfrutas hacer para relajarte?",
+          "Es importante priorizar tu bienestar. Exploremos formas de crear una rutina que apoye tu salud mental."
+        ]
+      },
+      {
+        "tag": "relaciones-interpersonales",
+        "patterns": [
+          "Tengo problemas con mis relaciones",
+          "¿Cómo mejorar mis relaciones interpersonales?"
+        ],
+        "responses": [
+          "Las relaciones son importantes para el bienestar. ¿Quieres hablar más sobre lo que te preocupa?"
+        ]
+      },
+      {
+        "tag": "estrés-laboral",
+        "patterns": [
+          "Estoy estresado/a en el trabajo",
+          "¿Cómo manejar el estrés laboral?"
+        ],
+        "responses": [
+          "El estrés laboral es común. ¿Te gustaría explorar estrategias para manejarlo mejor?"
+        ]
+      },
+      {
+        "tag": "autoestima",
+        "patterns": [
+          "Tengo baja autoestima",
+          "¿Cómo mejorar mi autoestima?"
+        ],
+        "responses": [
+          "Trabajar en la autoestima es importante para el bienestar. ¿Qué actividades te hacen sentir bien contigo mismo/a?"
+        ]
+      },
+      {
+        "tag": "culpa",
+        "patterns": [
+          "Me siento culpable",
+          "¿Cómo lidiar con sentimientos de culpa?"
+        ],
+        "responses": [
+          "La culpa puede ser difícil de manejar. ¿Quieres hablar más sobre lo que te hace sentir así?"
+        ]
+      },
+      {
+        "tag": "ansiedad-social",
+        "patterns": [
+          "Tengo ansiedad social",
+          "¿Cómo superar la ansiedad en situaciones sociales?"
+        ],
+        "responses": [
+          "La ansiedad social es común. Podemos explorar estrategias para enfrentarla juntos."
+        ]
+      },
+      {
+        "tag": "cambio-de-vida",
+        "patterns": [
+          "Estoy pasando por un cambio de vida",
+          "¿Cómo manejar cambios importantes en la vida?"
+        ],
+        "responses": [
+          "Los cambios pueden ser desafiantes. ¿Quieres hablar sobre cómo adaptarte a esta nueva etapa?"
+        ]
+      },
+      {
+        "tag": "tristeza",
+        "patterns": [
+          "Me siento triste",
+          "¿Cómo lidiar con sentimientos de tristeza?"
+        ],
+        "responses": [
+          "Es normal sentir tristeza a veces. ¿Quieres hablar sobre lo que te está afectando?"
+        ]
+      },
+      {
+        "tag": "motivacion",
+        "patterns": [
+          "No tengo motivación",
+          "¿Cómo encontrar motivación?"
+        ],
+        "responses": [
+          "Encontrar motivación puede ser difícil. ¿Qué te inspiraba antes? Podemos explorar cómo recuperarla."
+        ]
+      },
+      {
+        "tag": "meditacion",
+        "patterns": [
+          "Quiero aprender a meditar",
+          "¿Cómo empezar con la meditación?"
+        ],
+        "responses": [
+          "La meditación puede ser beneficiosa para la tranquilidad mental. ¿Quieres consejos sobre cómo comenzar?"
+        ]
+      },
+      {
+        "tag": "ejercicio",
+        "patterns": [
+          "Quiero hacer ejercicio para mejorar mi salud mental",
+          "¿Cómo el ejercicio puede ayudar con la salud mental?"
+        ],
+        "responses": [
+          "El ejercicio puede ser una excelente manera de mejorar el estado de ánimo y reducir el estrés. ¿Quieres hablar sobre cómo comenzar?"
+        ]
+      },
+      {
+        "tag": "tecnicas-de-relajacion",
+        "patterns": [
+          "¿Qué técnicas de relajación puedo usar?",
+          "Necesito métodos para calmarme"
+        ],
+        "responses": [
+          "Existen varias técnicas como la respiración profunda y la visualización. ¿Te gustaría aprender alguna específica?"
+        ]
+      },
+      {
+        "tag": "manejo-de-la-ira",
+        "patterns": [
+          "Tengo problemas para controlar mi ira",
+          "¿Cómo manejar la ira de manera saludable?"
+        ],
+        "responses": [
+          "Controlar la ira es importante para relaciones sanas. ¿Podemos explorar algunas estrategias juntos?"
+        ]
+      },
+      {
+        "tag": "mindfulness",
+        "patterns": [
+          "Quiero aprender mindfulness",
+          "¿Cómo practicar mindfulness?"
+        ],
+        "responses": [
+          "Mindfulness puede ayudar a estar presente en el momento. ¿Te gustaría consejos sobre cómo comenzar?"
+        ]
+      },
+      {
+        "tag": "problemas-familiares",
+        "patterns": [
+          "Tengo problemas familiares",
+          "¿Cómo manejar conflictos familiares?"
+        ],
+        "responses": [
+          "Los problemas familiares pueden ser desafiantes. ¿Quieres hablar sobre cómo abordar estos problemas?"
+        ]
+      },
+      {
+        "tag": "perdida",
+        "patterns": [
+          "He sufrido una pérdida reciente",
+          "¿Cómo lidiar con la pérdida de un ser querido?"
+        ],
+        "responses": [
+          "La pérdida puede ser difícil de sobrellevar. ¿Te gustaría hablar sobre tus sentimientos?"
+        ]
+      },
+      {
+        "tag": "culpabilidad",
+        "patterns": [
+          "Me siento culpable por algo que hice",
+          "¿Cómo superar sentimientos de culpa?"
+        ],
+        "responses": [
+          "La culpa puede ser abrumadora. ¿Podemos explorar formas de gestionarla?"
+        ]
+      },
+      {
+        "tag": "habilidades-sociales",
+        "patterns": [
+          "Quiero mejorar mis habilidades sociales",
+          "¿Cómo desarrollar mejores habilidades de comunicación?"
+        ],
+        "responses": [
+          "Mejorar las habilidades sociales puede mejorar tus relaciones. ¿Te gustaría aprender algunas estrategias?"
+        ]
+      },
+      {
+        "tag": "autocuidado",
+        "patterns": [
+          "Necesito mejorar mi autocuidado",
+          "¿Cómo practicar el autocuidado diario?"
+        ],
+        "responses": [
+          "El autocuidado es crucial para el bienestar. ¿Quieres consejos sobre cómo priorizarlo?"
+        ]
+      },
+      {
+        "tag": "trabajo-y-estres",
+        "patterns": [
+          "El estrés en el trabajo me está afectando",
+          "¿Cómo manejar el estrés laboral?"
+        ],
+        "responses": [
+          "El estrés laboral puede ser abrumador. ¿Te gustaría explorar formas de manejarlo mejor?"
+        ]
+      },
+      {
+        "tag": "habitos-saludables",
+        "patterns": [
+          "Quiero adoptar hábitos más saludables",
+          "¿Cómo mejorar mi estilo de vida?"
+        ],
+        "responses": [
+          "Adoptar hábitos saludables puede mejorar tu bienestar general. ¿Quieres hablar sobre cómo comenzar?"
+        ]
+      },
+      {
+        "tag": "apoyo-emocional",
+        "patterns": [
+          "Necesito apoyo emocional",
+          "¿Cómo puedo recibir apoyo durante momentos difíciles?"
+        ],
+        "responses": [
+          "Buscar apoyo emocional es valiente. ¿Podemos explorar quién o qué podría ofrecerte el apoyo que necesitas?"
+        ]
+      },
+      {
+        "tag": "frustracion",
+        "patterns": [
+          "Me siento frustrado/a con frecuencia",
+          "¿Cómo lidiar con sentimientos de frustración?"
+        ],
+        "responses": [
+          "La frustración es natural. ¿Te gustaría hablar sobre estrategias para manejarla mejor?"
+        ]
+      },
+      {
+        "tag": "crecimiento-personal",
+        "patterns": [
+          "Quiero trabajar en mi crecimiento personal",
+          "¿Cómo puedo crecer y mejorar como persona?"
+        ],
+        "responses": [
+          "El crecimiento personal es un viaje continuo. ¿Te gustaría explorar formas de desarrollarte?"
+        ]
+      },
+      {
+        "tag": "dependencia-emocional",
+        "patterns": [
+          "Siento que soy emocionalmente dependiente",
+          "¿Cómo superar la dependencia emocional?"
+        ],
+        "responses": [
+          "Es importante cultivar la independencia emocional. ¿Podemos hablar sobre cómo fortalecer tu autonomía?"
+        ]
+      },
+      {
+        "tag": "trastornos-alimenticios",
+        "patterns": [
+          "Tengo preocupaciones sobre mi alimentación",
+          "¿Cómo manejar los trastornos alimenticios?"
+        ],
+        "responses": [
+          "Es crucial buscar ayuda profesional para abordar los trastornos alimenticios. ¿Te gustaría hablar sobre cómo empezar?"
+        ]
+      },
+      {
+        "tag": "relajacion",
+        "patterns": [
+          "Necesito relajarme más",
+          "¿Cómo puedo incorporar más relajación en mi vida diaria?"
+        ],
+        "responses": [
+          "La relajación puede ser beneficiosa para reducir el estrés. ¿Te gustaría aprender técnicas específicas?"
+        ]
+      },
+      {
+        "tag": "equilibrio-emocional",
+        "patterns": [
+          "Necesito encontrar equilibrio emocional",
+          "¿Cómo puedo mantenerme emocionalmente equilibrado/a?"
+        ],
+        "responses": [
+          "El equilibrio emocional es importante. ¿Quieres explorar estrategias para encontrar ese equilibrio?"
+        ]
+      },
+      {
+        "tag": "insomnio",
+        "patterns": [
+          "Tengo problemas para dormir",
+          "¿Cómo puedo mejorar mi calidad de sueño?"
+        ],
+        "responses": [
+          "El insomnio puede afectar el bienestar. ¿Te gustaría hablar sobre cómo establecer rutinas para mejorar tu sueño?"
+        ]
+      },
+      {
+        "tag": "atencion-plena",
+        "patterns": [
+          "Quiero practicar la atención plena",
+          "¿Cómo puedo integrar la atención plena en mi vida diaria?"
+        ],
+        "responses": [
+          "La atención plena puede ayudar a reducir el estrés y mejorar la concentración. ¿Quieres aprender técnicas específicas?"
+        ]
+      },
+      {
+        "tag": "resiliencia",
+        "patterns": [
+          "Quiero desarrollar más resiliencia",
+          "¿Cómo puedo ser más resiliente?"
+        ],
+        "responses": [
+          "La resiliencia es clave para superar desafíos. ¿Quieres explorar estrategias para fortalecerla?"
+        ]
+      },
+      {
+        "tag": "sintomas-depresion",
+        "patterns": [
+          "¿Cuáles son los síntomas de la depresión?",
+          "Siento que tengo síntomas de depresión"
+        ],
+        "responses": [
+          "Los síntomas de la depresión pueden incluir sentimientos de tristeza, falta de interés en actividades diarias, fatiga, cambios en el apetito, entre otros. ¿Te gustaría saber más o hablar sobre cómo te sientes?"
+        ]
+      },
+      {
+        "tag": "buscar-ayuda-profesional",
+        "patterns": [
+          "Necesito hablar con un profesional sobre mi depresión",
+          "¿Cómo puedo encontrar ayuda profesional para la depresión?"
+        ],
+        "responses": [
+          "Buscar ayuda profesional es importante. Puedes considerar hablar con un psicólogo o psiquiatra para recibir apoyo y orientación. ¿Te gustaría que te ayudara a encontrar recursos?"
+        ]
+      },
+      {
+        "tag": "estrategias-coping",
+        "patterns": [
+          "¿Cuáles son algunas estrategias para manejar la depresión?",
+          "Necesito aprender técnicas para lidiar con la depresión"
+        ],
+        "responses": [
+          "Existen varias estrategias que pueden ayudar, como la terapia cognitivo-conductual, el ejercicio regular, mantener rutinas diarias, y practicar mindfulness. ¿Te gustaría explorar alguna de estas estrategias?"
+        ]
+      },
+      {
+        "tag": "sentimientos-depresion",
+        "patterns": [
+          "Siento que no puedo superar la depresión",
+          "¿Cómo lidiar con sentimientos intensos de tristeza?"
+        ],
+        "responses": [
+          "Es normal sentirse abrumado por la depresión. Hablar con alguien de confianza o buscar ayuda profesional puede ser útil para gestionar estos sentimientos. ¿Te gustaría hablar más sobre cómo te sientes?"
+        ]
+      },
+      {
+        "tag": "autocuidado-depresion",
+        "patterns": [
+          "¿Cómo practicar el autocuidado si sufro de depresión?",
+          "Necesito mejorar mi autocuidado para manejar la depresión"
+        ],
+        "responses": [
+          "El autocuidado es crucial para el bienestar mental. Puedes considerar establecer rutinas diarias, mantener una dieta equilibrada, practicar técnicas de relajación, y asegurarte de descansar lo suficiente. ¿Te gustaría más consejos sobre autocuidado?"
+        ]
+      },
+      {
+        "tag": "apoyo-emocional",
+        "patterns": [
+          "Necesito apoyo emocional para lidiar con la depresión",
+          "¿Cómo puedo encontrar apoyo de amigos y familiares?"
+        ],
+        "responses": [
+          "El apoyo emocional es fundamental. Puedes hablar con amigos cercanos o familiares sobre cómo te sientes. También puedes considerar unirte a grupos de apoyo o comunidades en línea donde puedas compartir tus experiencias y recibir apoyo. ¿Te gustaría más información sobre esto?"
+        ]
+      },
+      {
+        "tag": "impacto-depresion",
+        "patterns": [
+          "¿Cómo la depresión puede afectar mi vida diaria?",
+          "Siento que la depresión está afectando mi trabajo/estudios"
+        ],
+        "responses": [
+          "La depresión puede impactar tu energía, concentración, y motivación. Es importante buscar apoyo y desarrollar estrategias para manejar estos desafíos en el día a día. ¿Te gustaría explorar más sobre cómo la depresión puede afectarte?"
+        ]
+      },
+      {
+        "tag": "tratamiento-depresion",
+        "patterns": [
+          "¿Qué opciones de tratamiento existen para la depresión?",
+          "Necesito información sobre tratamientos para la depresión"
+        ],
+        "responses": [
+          "Los tratamientos pueden incluir terapia, medicamentos antidepresivos, y cambios en el estilo de vida. Es importante hablar con un profesional de la salud mental para determinar la mejor opción para ti. ¿Te gustaría más información sobre tratamientos?"
+        ]
+      },
+      {
+        "tag": "crecimiento-personal",
+        "patterns": [
+          "¿Te gustaría explorar formas de desarrollarte?",
+          "Quiero trabajar en mi crecimiento personal",
+          "¿Cómo puedo crecer y mejorar como persona?"
+        ],
+        "responses": [
+          "El crecimiento personal es un viaje continuo. ¿Te gustaría explorar formas de desarrollarte?"
+        ]
+      },
+      {
+        "tag": "autoestima",
+        "patterns": [
+          "¿Cómo puedo mejorar mi autoestima?",
+          "Siento que mi autoestima está baja"
+        ],
+        "responses": [
+          "Trabajar en tu autoestima puede incluir practicar el autocuidado, rodearte de personas positivas, y celebrar tus logros y fortalezas. ¿Te gustaría más consejos sobre cómo mejorar tu autoestima?"
+        ]
+      },
+      {
+        "tag": "ansiedad-social",
+        "patterns": [
+          "¿Cómo manejar la ansiedad en situaciones sociales?",
+          "Siento ansiedad cuando tengo que interactuar con otras personas"
+        ],
+        "responses": [
+          "La ansiedad social es común y existen estrategias para manejarla, como la respiración profunda, la preparación previa y el enfoque en pensamientos positivos. ¿Te gustaría más consejos sobre cómo manejar la ansiedad social?"
+        ]
+      },
+      {
+        "tag": "relaciones-interpersonales",
+        "patterns": [
+          "¿Cómo mejorar mis relaciones interpersonales?",
+          "Quiero ser más cercano/a con mis amigos/familiares"
+        ],
+        "responses": [
+          "Mejorar tus relaciones puede involucrar la comunicación abierta, escuchar activamente a los demás y ser empático/a. ¿Te gustaría explorar más sobre cómo fortalecer tus relaciones interpersonales?"
+        ]
+      },
+      {
+        "tag": "gestion-estres",
+        "patterns": [
+          "¿Cómo manejar el estrés en el trabajo/estudios?",
+          "Necesito técnicas para gestionar el estrés diario"
+        ],
+        "responses": [
+          "Gestionar el estrés puede incluir la planificación del tiempo, practicar la relajación y el mindfulness, y establecer límites saludables. ¿Te gustaría más consejos sobre cómo manejar el estrés?"
+        ]
+      },
+      {
+        "tag": "motivacion",
+        "patterns": [
+          "¿Cómo puedo mantenerme motivado/a para alcanzar mis metas?",
+          "Siento que me falta motivación en mi vida diaria"
+        ],
+        "responses": [
+          "Mantener la motivación puede implicar establecer metas realistas, encontrar inspiración en otros, y celebrar tus pequeños logros. ¿Te gustaría más consejos sobre cómo mantener la motivación?"
+        ]
+      },
+      {
+        "tag": "mindfulness",
+        "patterns": [
+          "¿Qué es el mindfulness y cómo puedo practicarlo?",
+          "Necesito técnicas de mindfulness para reducir el estrés"
+        ],
+        "responses": [
+          "El mindfulness es la práctica de estar presente en el momento presente. Puedes practicar la meditación mindfulness y la atención plena en tus actividades diarias. ¿Te gustaría más información sobre cómo incorporar mindfulness en tu vida?"
+        ]
+      },
+      {
+        "tag": "resolucion-conflictos",
+        "patterns": [
+          "¿Cómo puedo resolver conflictos de manera efectiva?",
+          "Necesito estrategias para resolver disputas con otros"
+        ],
+        "responses": [
+          "Resolver conflictos efectivamente puede incluir la comunicación clara, escuchar activamente y buscar soluciones mutuamente beneficiosas. ¿Te gustaría más consejos sobre cómo resolver conflictos?"
+        ]
+      },
+      {
+        "tag": "equilibrio-vida",
+        "patterns": [
+          "¿Cómo puedo lograr un equilibrio saludable entre trabajo y vida personal?",
+          "Quiero tener más tiempo para mí/a pesar de mis responsabilidades"
+        ],
+        "responses": [
+          "Lograr un equilibrio saludable puede incluir establecer límites, delegar tareas cuando sea posible y priorizar tus necesidades personales. ¿Te gustaría más consejos sobre cómo encontrar un equilibrio entre trabajo y vida personal?"
+        ]
+      },
+      {
+        "tag": "creatividad",
+        "patterns": [
+          "¿Cómo puedo fomentar mi creatividad en la vida diaria?",
+          "Quiero explorar nuevas formas de expresión creativa"
+        ],
+        "responses": [
+          "Fomentar tu creatividad puede incluir practicar actividades artísticas, explorar nuevos hobbies y permitirte experimentar sin miedo al juicio. ¿Te gustaría más consejos sobre cómo ser más creativo/a?"
+        ]
+      },
+      {
+        "tag": "habilidades-comunicativas",
+        "patterns": [
+          "¿Cómo puedo mejorar mis habilidades de comunicación?",
+          "Quiero ser más efectivo/a al comunicarme con los demás"
+        ],
+        "responses": [
+          "Mejorar tus habilidades comunicativas puede implicar la escucha activa, el lenguaje corporal positivo y la claridad en tus mensajes. ¿Te gustaría más consejos sobre cómo mejorar tus habilidades de comunicación?"
+        ]
+      },
+      {
+        "tag": "gestion-emociones",
+        "patterns": [
+          "¿Cómo puedo gestionar mejor mis emociones?",
+          "Siento que mis emociones a menudo me superan"
+        ],
+        "responses": [
+          "Gestionar tus emociones puede incluir la autoconciencia, la práctica de la regulación emocional y la búsqueda de apoyo emocional cuando sea necesario. ¿Te gustaría más consejos sobre cómo gestionar tus emociones?"
+        ]
+      },
+      {
+        "tag": "crecimiento-espiritual",
+        "patterns": [
+          "¿Cómo puedo explorar mi crecimiento espiritual?",
+          "Quiero profundizar en mi conexión espiritual"
+        ],
+        "responses": [
+          "Explorar tu crecimiento espiritual puede implicar la meditación, la reflexión personal y la conexión con tu sentido de propósito. ¿Te gustaría más consejos sobre cómo explorar tu crecimiento espiritual?"
+        ]
+      },
+      {
+        "tag": "gestion-tiempo",
+        "patterns": [
+          "¿Cómo puedo mejorar mi gestión del tiempo?",
+          "Siento que no tengo suficiente tiempo para todo lo que necesito hacer"
+        ],
+        "responses": [
+          "Mejorar tu gestión del tiempo puede incluir establecer prioridades, usar listas de tareas y eliminar distracciones. ¿Te gustaría más consejos sobre cómo gestionar mejor tu tiempo?"
+        ]
+      },
+      {
+        "tag": "gratitud",
+        "patterns": [
+          "¿Cómo puedo practicar la gratitud diaria?",
+          "Quiero aprender a apreciar más las cosas buenas de la vida"
+        ],
+        "responses": [
+          "Practicar la gratitud diaria puede incluir llevar un diario de gratitud, expresar agradecimiento a los demás y enfocarte en lo positivo en tu vida. ¿Te gustaría más consejos sobre cómo cultivar la gratitud?"
+        ]
+      },
+      {
+        "tag": "optimismo",
+        "patterns": [
+          "¿Cómo puedo desarrollar una actitud más optimista?",
+          "Quiero ser más positivo/a frente a los desafíos"
+        ],
+        "responses": [
+          "Desarrollar una actitud optimista puede implicar el cambio de perspectiva, practicar el pensamiento positivo y rodearte de personas optimistas. ¿Te gustaría más consejos sobre cómo desarrollar una mentalidad optimista?"
+        ]
+      },
+      {
+        "tag": "bienestar-fisico",
+        "patterns": [
+          "¿Cómo puedo mejorar mi bienestar físico?",
+          "Quiero adoptar un estilo de vida más saludable"
+        ],
+        "responses": [
+          "Mejorar tu bienestar físico puede incluir hacer ejercicio regularmente, mantener una dieta balanceada y dormir lo suficiente. ¿Te gustaría más consejos sobre cómo mejorar tu bienestar físico?"
+        ]
+      },
+      {
+        "tag": "aprendizaje-continuo",
+        "patterns": [
+          "¿Cómo puedo seguir aprendiendo y creciendo?",
+          "Quiero desarrollar nuevas habilidades y conocimientos"
+        ],
+        "responses": [
+          "Seguir aprendiendo y creciendo puede implicar tomar cursos, leer libros, y buscar oportunidades de desarrollo personal y profesional. ¿Te gustaría más consejos sobre cómo seguir aprendiendo?"
+        ]
+      },
+      {
+        "tag": "relajacion",
+        "patterns": [
+          "¿Cómo puedo relajarme y reducir el estrés?",
+          "Necesito técnicas efectivas de relajación"
+        ],
+        "responses": [
+          "Relajarte y reducir el estrés puede incluir practicar la respiración profunda, la meditación, y dedicar tiempo a actividades que disfrutes. ¿Te gustaría más consejos sobre técnicas de relajación?"
+        ]
+      },
+      {
+        "tag": "gestion-emociones",
+        "patterns": [
+          "¿Cómo puedo gestionar mejor mis emociones?",
+          "Siento que mis emociones a menudo me superan"
+        ],
+        "responses": [
+          "Gestionar tus emociones puede incluir la autoconciencia, la práctica de la regulación emocional y la búsqueda de apoyo emocional cuando sea necesario. ¿Te gustaría más consejos sobre cómo gestionar tus emociones?"
+        ]
+      },
+      {
+        "tag": "crecimiento-espiritual",
+        "patterns": [
+          "¿Cómo puedo explorar mi crecimiento espiritual?",
+          "Quiero profundizar en mi conexión espiritual"
+        ],
+        "responses": [
+          "Explorar tu crecimiento espiritual puede implicar la meditación, la reflexión personal y la conexión con tu sentido de propósito. ¿Te gustaría más consejos sobre cómo explorar tu crecimiento espiritual?"
+        ]
+      },
+      {
+        "tag": "gestion-tiempo",
+        "patterns": [
+          "¿Cómo puedo mejorar mi gestión del tiempo?",
+          "Siento que no tengo suficiente tiempo para todo lo que necesito hacer"
+        ],
+        "responses": [
+          "Mejorar tu gestión del tiempo puede incluir establecer prioridades, usar listas de tareas y eliminar distracciones. ¿Te gustaría más consejos sobre cómo gestionar mejor tu tiempo?"
+        ]
+      },
+      {
+        "tag": "gratitud",
+        "patterns": [
+          "¿Cómo puedo practicar la gratitud diaria?",
+          "Quiero aprender a apreciar más las cosas buenas de la vida"
+        ],
+        "responses": [
+          "Practicar la gratitud diaria puede incluir llevar un diario de gratitud, expresar agradecimiento a los demás y enfocarte en lo positivo en tu vida. ¿Te gustaría más consejos sobre cómo cultivar la gratitud?"
+        ]
+      },
+      {
+        "tag": "optimismo",
+        "patterns": [
+          "¿Cómo puedo desarrollar una actitud más optimista?",
+          "Quiero ser más positivo/a frente a los desafíos"
+        ],
+        "responses": [
+          "Desarrollar una actitud optimista puede implicar el cambio de perspectiva, practicar el pensamiento positivo y rodearte de personas optimistas. ¿Te gustaría más consejos sobre cómo desarrollar una mentalidad optimista?"
+        ]
+      },
+      {
+        "tag": "bienestar-fisico",
+        "patterns": [
+          "¿Cómo puedo mejorar mi bienestar físico?",
+          "Quiero adoptar un estilo de vida más saludable"
+        ],
+        "responses": [
+          "Mejorar tu bienestar físico puede incluir hacer ejercicio regularmente, mantener una dieta balanceada y dormir lo suficiente. ¿Te gustaría más consejos sobre cómo mejorar tu bienestar físico?"
+        ]
+      },
+      {
+        "tag": "aprendizaje-continuo",
+        "patterns": [
+          "¿Cómo puedo seguir aprendiendo y creciendo?",
+          "Quiero desarrollar nuevas habilidades y conocimientos"
+        ],
+        "responses": [
+          "Seguir aprendiendo y creciendo puede implicar tomar cursos, leer libros, y buscar oportunidades de desarrollo personal y profesional. ¿Te gustaría más consejos sobre cómo seguir aprendiendo?"
+        ]
+      },
+      {
+        "tag": "relajacion",
+        "patterns": [
+          "¿Cómo puedo relajarme y reducir el estrés?",
+          "Necesito técnicas efectivas de relajación"
+        ],
+        "responses": [
+          "Relajarte y reducir el estrés puede incluir practicar la respiración profunda, la meditación, y dedicar tiempo a actividades que disfrutes. ¿Te gustaría más consejos sobre técnicas de relajación?"
+        ]
+      },
+      {
+        "tag": "autoestima",
+        "patterns": [
+          "¿Cómo puedo mejorar mi autoestima?",
+          "Siento que mi autoestima está baja"
+        ],
+        "responses": [
+          "Trabajar en tu autoestima puede incluir practicar el autocuidado, rodearte de personas positivas, y celebrar tus logros y fortalezas. ¿Te gustaría más consejos sobre cómo mejorar tu autoestima?"
+        ]
+      },
+      {
+        "tag": "ansiedad-social",
+        "patterns": [
+          "¿Cómo manejar la ansiedad en situaciones sociales?",
+          "Siento ansiedad cuando tengo que interactuar con otras personas"
+        ],
+        "responses": [
+          "La ansiedad social es común y existen estrategias para manejarla, como la respiración profunda, la preparación previa y el enfoque en pensamientos positivos. ¿Te gustaría más consejos sobre cómo manejar la ansiedad social?"
+        ]
+      },
+      {
+        "tag": "relaciones-interpersonales",
+        "patterns": [
+          "¿Cómo mejorar mis relaciones interpersonales?",
+          "Quiero ser más cercano/a con mis amigos/familiares"
+        ],
+        "responses": [
+          "Mejorar tus relaciones puede involucrar la comunicación abierta, escuchar activamente a los demás y ser empático/a. ¿Te gustaría explorar más sobre cómo fortalecer tus relaciones interpersonales?"
+        ]
+      },
+      {
+        "tag": "gestion-estres",
+        "patterns": [
+          "¿Cómo manejar el estrés en el trabajo/estudios?",
+          "Necesito técnicas para gestionar el estrés diario"
+        ],
+        "responses": [
+          "Gestionar el estrés puede incluir la planificación del tiempo, practicar la relajación y el mindfulness, y establecer límites saludables. ¿Te gustaría más consejos sobre cómo manejar el estrés?"
+        ]
+      },
+      {
+        "tag": "motivacion",
+        "patterns": [
+          "¿Cómo puedo mantenerme motivado/a para alcanzar mis metas?",
+          "Siento que me falta motivación en mi vida diaria"
+        ],
+        "responses": [
+          "Mantener la motivación puede implicar establecer metas realistas, encontrar inspiración en otros, y celebrar tus pequeños logros. ¿Te gustaría más consejos sobre cómo mantener la motivación?"
+        ]
+      },
+      {
+        "tag": "mindfulness",
+        "patterns": [
+          "¿Qué es el mindfulness y cómo puedo practicarlo?",
+          "Necesito técnicas de mindfulness para reducir el estrés"
+        ],
+        "responses": [
+          "El mindfulness es la práctica de estar presente en el momento presente. Puedes practicar la meditación mindfulness y la atención plena en tus actividades diarias. ¿Te gustaría más información sobre cómo incorporar mindfulness en tu vida?"
+        ]
+      },
+      {
+        "tag": "resolucion-conflictos",
+        "patterns": [
+          "¿Cómo puedo resolver conflictos de manera efectiva?",
+          "Necesito estrategias para resolver disputas con otros"
+        ],
+        "responses": [
+          "Resolver conflictos efectivamente puede incluir la comunicación clara, escuchar activamente y buscar soluciones mutuamente beneficiosas. ¿Te gustaría más consejos sobre cómo resolver conflictos?"
+        ]
+      },
+      {
+        "tag": "equilibrio-vida",
+        "patterns": [
+          "¿Cómo puedo lograr un equilibrio saludable entre trabajo y vida personal?",
+          "Quiero tener más tiempo para mí/a pesar de mis responsabilidades"
+        ],
+        "responses": [
+          "Lograr un equilibrio saludable puede incluir establecer límites, delegar tareas cuando sea posible y priorizar tus necesidades personales. ¿Te gustaría más consejos sobre cómo encontrar un equilibrio entre trabajo y vida personal?"
+        ]
+      },
+      {
+        "tag": "creatividad",
+        "patterns": [
+          "¿Cómo puedo fomentar mi creatividad en la vida diaria?",
+          "Quiero explorar nuevas formas de expresión creativa"
+        ],
+        "responses": [
+          "Fomentar tu creatividad puede incluir practicar actividades artísticas, explorar nuevos hobbies y permitirte experimentar sin miedo al juicio. ¿Te gustaría más consejos sobre cómo ser más creativo/a?"
+        ]
+      },
+      {
+        "tag": "habilidades-comunicativas",
+        "patterns": [
+          "¿Cómo puedo mejorar mis habilidades de comunicación?",
+          "Quiero ser más efectivo/a al comunicarme con los demás"
+        ],
+        "responses": [
+          "Mejorar tus habilidades comunicativas puede implicar la escucha activa, el lenguaje corporal positivo y la claridad en tus mensajes. ¿Te gustaría más consejos sobre cómo mejorar tus habilidades de comunicación?"
+        ]
+      }
+      
+    ]
+  }
+  
